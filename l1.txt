@@ -1,0 +1,9 @@
+Version control system
+GIT-tool
+
+-helps to manage project files(html,css,js,images)
+-Track changes
+-tells us when we modified the files when and how
+-we can revert changes
+-Collaboration:
+if grp of ppl working on project and someone accidently deleted a file

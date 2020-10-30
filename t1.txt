@@ -1,0 +1,114 @@
+waterfall model
+agile model
+DSM
+-Daily Scrums improve communications, eliminate other meetings, identify impediments to development for removal, highlight and promote quick decision-making, and improve the Development Team's level of knowledge. 
+This is a key inspect and adapt meeting.
+Dynamic Systems Development Method (DSDM)
+
+Agile focuses on making developers and development cycles more efficient, while DevOps brings the operations team into play to enable 
+continuous integration and continuous delivery
+DevOps-development operations
+----
+-is practice of operations and developmnt engineers participating together in entire
+service life cycle from design through development process to production support
+
+--is a culture of trust and collaboration in which people
+use right tools for automation to achieve continuous delivery
+and continuous deployment
+
+devops pipeline
+-------------
+source code management-git,perforce,..
+business analysts,developer,tester,ops
+behavior driven development
+containers-docker,elasticbox
+configuration management-chef
+testing-selenium, cucumber
+continuous integrations--jenkins,gradle,..
+monitoring--Nagios,airbrake,..
+
+
+operations team function:
+-----------------
+creating envrmnts, creating build for testing, creating configurations to integrate
+
+Version--are the snapshots of project/ changes over period of time
+--------
+Version control systems
+-----------------------
+ are a category of software tools that helps record changes to files by keeping a track of modifications done to the code.
+Use of Version Control System:
+A repository: It can be thought as a database of changes. It contains all the edits and historical versions (snapshots) of the project.
+Copy of Work (sometimes called as checkout): It is the personal copy of all the files in a project. You can edit to this copy, without affecting the work of others and you can finally commit your changes to a repository when you are done making your changes
+
+Docker:
+Docker is a set of platform as a service products that use OS-level virtualization to deliver 
+software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and 
+configuration files; they can communicate with each other through well-defined channels.
+
+Version control system/revision control/ source control - VCS
+-remebers changes-version 1 , version 2, ..
+Source code management-SCM
+-manages multiple versions of docs , prgrms, websites,..
+ex-of VCS--Git,CVS,Subversion
+-keep track of changes....rollback
+merge contributions of multiple developers
+facilitates backup
+inc. productivity
+encourages experimentations
+help to identify and fix conflicts
+make source readily available-less duplicated effort
+
+
+
+Closed source--cannot overwrite / change any existing feature
+cannot modify
+
+
+With closed source software (also known as proprietary software),
+ the public is not given access to the source code, so they can't see or
+ modify it in any way. But with open source software, the source code is publicly available to 
+anyone who wants it, and programmers can read or change that code if they desire
+
+Git: distributed control system, directory content mgmt system, tree history storage system
+	stupid content tracker
+
+centalized VCS vs distributed Version control:
+----------
+
+Central server(project repository-folder/db)
+--like client-server architecture: of a computer network in which many clients (remote processors) request and receive service from a centralized server (host computer).
+ Client computers provide an interface to allow a computer user to request services of the server and to display the results the server returns.
+-> you need to take an update from the master repository and then you get the local copy of the code in your system. So once you get the latest version of the code, you start making your own changes in the code and after that, you simply need to commit those changes straight forward into the master repository
+cons:
+network down cannot access repository
+single point failure
+server crash---need timely backup
+interdependency--one node has to wait for modifying..no concurrent updates
+
+
+Distributed VCS--push/pull ops
+Each node have central repository
+ every client or user can work locally and disconnected which is more convenient than centralized source control and that’s why it is called distributed.
+You don’t need to rely on the central server, you can clone the entire history or copy of the code to your hard drive. So when you start working on a project,
+ you clone the code from the master repository in your own hard drive, then you get the code from your own repository to make changes and after doing changes, 
+you commit your changes to your local repository and at this point your local repository will have ‘change sets‘ but it is still disconnected with master repository (master repository will have different ‘sets of changes‘ from each and every individual developer’s repository), so to communicate with it, you issue a request to the master repository and push your local repository code to the master repository. 
+--->>concurrent / parallel developement possible
+
+git is distributed,
+most ops in git need only local files and resources to operate
+every opeartion in git is local
+everything in GIT is check-summed before it is stored i.e. integrity(hash,SHA,MD5)
+3 states of operation:
+git working directory:
+all files related to project
+staging area:
+cache / index area
+local repository
+
+stage file:u have marked a modified file in its current version 
+to go into your next commit snapshot
+(review before commit--checking point before commit, dividing bigger projects)
+
+
+github is remoteserver
