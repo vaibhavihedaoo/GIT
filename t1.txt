@@ -112,3 +112,26 @@ to go into your next commit snapshot
 
 
 github is remoteserver
+
+checkout-switch between versions,brancbes,tags
+default branch - master
+
+undo can be whhen:
+checkout/restore: 
+undo  uncommited/unstaged change, file level, commit level,private branches
+
+revert -safe undo commited change, recommended on both public private
+reset-unsafe  undo commit change , commit level as well as file level, private
+
+revert-can work on any commit level(on any id)
+reset-operates from latest version(from top)
+
+skips/rollback/ delete 2 latest versions:
+git reset --hard Head~2
+
+reference log of actions:
+git reflog
+
+--grep
+->allows you to easily search through any committed tree, the working directory, or even the index for a string or regular expression
+
