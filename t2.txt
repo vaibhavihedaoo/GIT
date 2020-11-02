@@ -1,0 +1,49 @@
+head ptr --controlled by checkout cmd
+ is the pointer to the current branch reference, 
+which is in turn a pointer to the last commit you made or the last commit that was checked out into your working directory. That also means it will be the parent of the next commit you do.
+branches(master and develop)
+
+create branch cmd: git branch branch_name
+
+to switch to branch+create branch:
+git checkout -b branch_name
+now after checkout switch, head will point to branch not tha master 
+commit on branch will have link to master's base
+now we need to merge both these bases(i.e child branch merging to parent branch) using: git checkout master
+now head ptr is on parent branch
+
+if someone else their changes on master branch before we merge
+master branch gets updated--base changes
+
+after merge operation: delete child branch
+cmd: git branch -d branch_name
+2 types of merge
+1. same base:fast forward merge
+cmd: git merge branch_name
+2. different base:
+a)3-way merging:
+cmd:git checkout mastter
+git merge branch_name
+b)rebasing:change base of child branch then merge with master
+cmd:git rebase master
+git rebase --continue
+git checkout master
+git merge branch_name
+before executing merge command we should be on parent-master branch
+
+A branch is:
+unique series of code changes with an uniques name
+When to create branch:
+when u have new ides
+when u want to work on some bug
+not sure what are u doing is correct
+when many ppl are working on project
+R&D
+
+Master is the default branch created
+
+git commit -m "my first commit" 
+
+-merging code from development to production stage
+centralized: 2-way merging
+distributed: 3-way merging, rebasing(only in git)
