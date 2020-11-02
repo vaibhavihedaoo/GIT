@@ -47,3 +47,20 @@ git commit -m "my first commit"
 -merging code from development to production stage
 centralized: 2-way merging
 distributed: 3-way merging, rebasing(only in git)
+
+stash:temp storage area for half done work
+git stash save MyStashChange6
+git stash list
+git stash apply stash_id or git stash pop
+
+Remote repository:
+everyone has complete copy of repository
+keeps track of changes
+adding a remore--enables nice integration location
+
+
+what is github?
+working directory
+workspace
+local repository
+remote repository(push,fetch)
