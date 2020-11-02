@@ -1,7 +1,7 @@
 
 hello!!
-change 1:-
-change 2 :-for bug1 fix
-change 3 :-by team mate on master for WI4
-change 4  : for bug2 fix
+change 1:->for login feature WI1.updated
+change 2 :->for bug1 fix
+change 3 :->by team mate on master for WI4
+change 4  :-> for bug2 fix
 
